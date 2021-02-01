@@ -101,8 +101,115 @@
 
 // decision making
 
+> decision making is done with if statment and the ? its like the if but wihout texts
+> if uses boolean coparison to check values and then converts them back once a truthy or falsey value has been achieved
+> sturucture : 
 
+if(){
 
+}
 
+() ? condition one: else 
+        OR
+() ? condition one : () ? condition two : end condition
 
+// logical operators && || !
 
+> or searches for the first truthy value and returns it
+> adn searches for the first falsey value and returns it
+> once the value is found execution is stopped
+
+> when used in a chain format they return the or to get the first truthy value from the chain 
+> when using a chained and you can get the first falsey value from a chain
+> there is an issue that comes uo when comparing to null adn undefined and  ?? comes to soolve that
+
+> when it comes to false  ! before a var makes it false.
+> two return the inverse (not not false).
+
+> || = returns 1st truthy value
+> && = returns 1st falsey value
+
+// nullish coalesing
+
+> returns the first value thast not null or undefined
+> this fixes the issue when || / && awas comparing it in a chain
+> ?? = returns 1st defined value
+> the ||  can be used in the same way as  ??  just keep in mind theirdiffrences (defined and true value)
+> if you wanna use ?? || and && together you cant due to safety reasons unless you have (parenthesis showing presidence) 
+
+// loops
+
+> loops, itterations, recursions they all mean the same thing doing something over and over again.
+> loops are syntax structures that help us run though or do a repettitive task a number of times
+> there are several types of loops e.g
+
+* for ----- > most commonly used
+* do while
+* while
+
+> here we run through the for 
+> it has 3 key items 
+> the initializer, condition ,incriment or decriment then the body
+
+for(let inint = 0; inint < 10; init++){
+    // this will incriment from 0 to 9 which will be 10 steps up
+}
+
+> breaks make the loop stop executing
+> continue skips a part in the loop 
+> you can use the decision making tools to facilitate this
+
+// the switch 
+
+> the switch is used in place where you have 5 > if's
+
+switch(condition){
+    case : 
+        statment;
+        break;
+    default:
+        statment;
+        break;
+}
+
+> if cases have the same result you group them as shown below
+
+case 1:
+case 2:
+case 3:
+    statment;
+    break;
+
+> type maters and case in switches
+
+// functions
+
+> a function is a representation of an action.
+> functions are used to write re usable code.
+
+function name(parameters){
+    return // if thereturn isnt there value is undefined
+}
+
+> to execue code in a function you call it by writting the name and () and you can initialize the parameter vals if there are there.
+> variables declared inside functions can't be seen outside them.
+> you can have default values in variables by adding them to the parameters
+
+function name(p1 = 'isaac'){
+    return p1;
+}
+
+> now if p1 value isnt set it will return isaac.
+> or have an if function that when the val is undefined it sets the value to sth
+> it'll check for undefined as null are usually developer added its best practice
+> here also exists function expresiions and callbacks
+
+let person = function(){
+    // this is an expression 
+    // its values can be seen in a block buut not outside
+}
+
+let chicken = () => `this is a arrow function`;
+
+> there exists callback functions thats calling a function within a function to do this you need to understand the function you wanna call and the one your in its parameters how it works everything about it so that there will be no errors while doing the calls
+> you can use the function names as vars cause thats what they are at the end of the day
