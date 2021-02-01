@@ -75,9 +75,9 @@
 > you can perform all math operation in programming and you could also make your own new ones.
 > examples of math operations
 
-* + addition
-* - subtraction
-* * multiplication
+* (+) addition
+* (-) subtraction
+* (*) multiplication
 * / division
 * % modulus
 * ** exponential
@@ -86,9 +86,9 @@
 
 > when comparing values they are converted to boolean values then a check is made then after the check they are then conerted back to their origina values examples of comparison.
 
-* > greater than
+* ( > ) greater than
 * < less than
-* >= greaterthan or equal to
+* ( >= ) greaterthan or equal to
 * <= less than or equal to
 * == equal
 * === strictly equal
